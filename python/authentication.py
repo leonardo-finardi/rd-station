@@ -4,13 +4,8 @@ from selenium.webdriver.common.by import By
 import json
 
 class AuthFlow:
-    """
-    This class makes an webscrapping using Selenium 
-    to request code from RD Station and then use
-    that code to request access token
-    """
     def __init__(self, email, password):
-        self.redirect_uri = "https://7urdstation.org/auth/callback"
+        self.redirect_uri = "https://frdstation.org/auth/callback"
         self.client_id = 'your-client-id'
         self.client_secret = 'your-client-secret'
         self.email = email
